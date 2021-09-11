@@ -7,10 +7,10 @@
   "author": "Ragib Badaruddin <ragib.badaruddin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon ./src/index.ts",
+    "build": "tsc",
     "format": "prettier --write .",
     "lint": "tsc --noEmit && eslint src --fix --ext .js,.jsx,.ts,.tsx",
-    "build": "tsc",
+    "start": "nodemon ./src/index.ts",
     "test": "jest"
   },
   "devDependencies": {
