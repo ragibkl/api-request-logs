@@ -1,5 +1,7 @@
+import { app } from './app';
+
 function main() {
-  console.log('hello world');
+  app.listen(3000);
 }
 
 main();
