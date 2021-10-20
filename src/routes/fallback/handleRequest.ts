@@ -3,7 +3,7 @@ import { RouterContext } from 'koa-router';
 import * as reqs from '../../storage/requests';
 
 export async function handleRequest(ctx: RouterContext): Promise<void> {
-  console.log('hello');
+  console.log('handleRequest');
   const event = {
     timestamp: new Date().toISOString(),
     request: {
