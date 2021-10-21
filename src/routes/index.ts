@@ -8,4 +8,4 @@ export const router = new Router();
 
 router.use('/health', healthRouter.routes());
 router.use('/_requests', requestsRouter.routes());
-router.all('/(.*)   ', fallbackRouter.routes());
+router.all('/(.*)', fallbackRouter.routes());
