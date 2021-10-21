@@ -7,3 +7,7 @@ export async function add(evt: any) {
 export async function list() {
   return REQUESTS;
 }
+
+export async function clear() {
+  REQUESTS.length = 0;
+}
