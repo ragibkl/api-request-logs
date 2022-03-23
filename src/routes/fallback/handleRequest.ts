@@ -7,6 +7,7 @@ export async function handleRequest(ctx: RouterContext): Promise<void> {
   const event = {
     timestamp: new Date().toISOString(),
     request: {
+      method: ctx.request.method,
       body: ctx.request.body,
       headers: ctx.request.headers,
       host: ctx.request.host,
