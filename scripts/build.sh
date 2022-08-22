@@ -5,7 +5,7 @@ IMAGE_REGISTRY=ragibkl/api-request-logs
 GIT_TAG=$(git describe --tags --exact-match 2> /dev/null);
 GIT_BRANCH=$(git symbolic-ref -q --short HEAD);
 GIT_COMMIT=$(git rev-parse --short HEAD);
-DATE=$(date +%F.%H%M%S);
+DATE=$(date -u +%F.%H%M%S);
 
 TAG=""
 # Get image tag
